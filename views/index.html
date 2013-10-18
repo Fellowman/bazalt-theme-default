@@ -2,18 +2,7 @@
     <div class="col col-lg-9 content" bz-loading-container="loading">
         <div class="mainpage">
 
-            <div bz-widget="'bcPages.Widgets.Category'"></div>
-
-            <div class="main-feed">
-                <!--E:\projects\theme-default\bazalt\src\components\bcPages\controllers\Widget\Category.js - param.truncate -->
-                <div ng-repeat="article in list">
-                    <h3>{{ article.title }}</h3>
-                    <hr/>
-                    <div bz-comments="article.comments" class="col col-lg-4"></div>
-                </div>
-            </div>
-
-            <div jquery-galleria="page.images"></div>
+            <div bz-widget="'bcPages.Widgets.Page'" data-settings="{'id': 23 }"></div>
 
         </div>
     </div>
