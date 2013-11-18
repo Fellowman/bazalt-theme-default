@@ -80,7 +80,7 @@ body {
         a {
           .header-font();
           font-size: 17px;
-          padding: 10px 25px;
+          padding: 10px 27px;
           color: #f2f2f2;
           &.dropdown-toggle {
             .caret {
@@ -209,11 +209,12 @@ h3 {
 }
 
 .sidebar {
+  padding-right: 0;
   .nav {
     .nav-tabs();
     .nav-stacked();
     border-bottom: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     li {
       margin-bottom: -3px;
       a {
@@ -316,7 +317,7 @@ h3 {
   opacity: 0.9;
   padding: 4px 0;
   position: absolute;
-  width: 820px;
+  width: 755px;
 }
 
 .main-menu {
@@ -332,14 +333,15 @@ h3 {
 
 .v_menu {
   background-color: #91c2fa;
-  padding: 18px;
+  padding: 10px;
   h3 {
     a {
       color: #262626;
       display: block;
-      font-size: 16px;
+      font-size: 14px;
       line-height: 30px;
       text-align: center;
+      text-transform: uppercase;
       strong {
         font-weight: bold;
       }
@@ -377,6 +379,39 @@ h3 {
     height: 200px;
     display: block;
     float: left;
+  }
+}
+
+a.izumrud {
+  background-image: url("../img/izumrud.png");
+  width: 250px;
+  height: 200px;
+  float: left;
+}
+
+a.skyroom {
+  background-image: url("../img/skyroom.png");
+  width: 250px;
+  height: 200px;
+  float: left;
+}
+a.beefeater {
+  background-image: url("../img/beefeater.png");
+  width: 250px;
+  height: 200px;
+  float: left;
+}
+
+.header-link a {
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  margin-left: -30px;
+  margin-top: 165px;
+  text-transform: uppercase;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
   }
 }
 
@@ -443,6 +478,7 @@ h3 {
   }
 }
 
+/*
 #blick {
   margin: 0 auto;
   position: relative;
@@ -461,10 +497,11 @@ h3 {
   width: 295px;
   height: 800px;
 }
+*/
 
 .slider {
+  width: 755px;
   img {
-    width: 820px;
-    display: block;
+    width: 100%;
   }
 }

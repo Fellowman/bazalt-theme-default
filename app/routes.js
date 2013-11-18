@@ -13,6 +13,23 @@ define('routes', [
 
                 $routeSegmentProvider.options.autoLoadTemplates = true;
 
+                $routeSegmentProvider.when('/izumrud', 'izumrud')
+                    .segment('izumrud', {
+                        templateUrl: '/views/izumrud.html'
+                    });
+                $routeSegmentProvider.when('/skyroom', 'skyroom')
+                    .segment('skyroom', {
+                        templateUrl: '/views/skyroom.html'
+                    });
+                $routeSegmentProvider.when('/skyroom', 'skyroom')
+                    .segment('skyroom', {
+                        templateUrl: '/views/skyroom.html'
+                    });
+                $routeSegmentProvider.when('/beefeater', 'beefeater')
+                    .segment('beefeater', {
+                        templateUrl: '/views/beefeater.html'
+                    });
+
                 $sceProvider.enabled(false);
 
                 $httpProvider.responseInterceptors.push('loaderInterceptor');
