@@ -8521,7 +8521,7 @@ body .navbar .nav > li > a {
 body .navbar .nav li a {
   font-family: TAHOMA;
   font-size: 17px;
-  padding: 10px 27px;
+  padding: 10px 23px;
   color: #f2f2f2;
 }
 body .navbar .nav li a.dropdown-toggle .caret {
@@ -8804,7 +8804,7 @@ h3 a:focus {
   opacity: 0.9;
   padding: 4px 0;
   position: absolute;
-  width: 755px;
+  width: 100%;
 }
 .main-menu li a {
   text-transform: uppercase;
@@ -8969,9 +8969,6 @@ a.beefeater {
   height: 800px;
 }
 */
-.slider {
-  width: 755px;
-}
 .slider img {
   width: 100%;
 }
