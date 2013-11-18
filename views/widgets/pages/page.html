@@ -1,7 +1,17 @@
-<div bz-loading-container="widget.$loading" class="widget page default">
+<div class="row default widget">
 
-    <h1>{{ page.title.en }}</h1>
-
-    <div ng-bind-html="page.body.en"></div>
+    <div ng-class="{ 'col-lg-8': page.images.0, 'col-lg-12': !page.images.0 }">
+        <h2><a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">{{page.title|language}}</a></h2>
+        <article>
+            <div class="body">
+                <div ng-bind-html="page.body.en"></div>
+            </div>
+        </article>
+    </div>
+    <div ng-class="{ 'col-lg-4': page.images.0}">
+        <a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">
+            <img ng-src="{{ page.images.0.thumbnails.preview }}" />
+        </a>
+    </div>
 
 </div>

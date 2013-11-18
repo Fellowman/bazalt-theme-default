@@ -8653,6 +8653,9 @@ h3 a:focus {
 .feed-item .body {
   margin-bottom: 10px;
 }
+.mainpage {
+  background: #ffffff;
+}
 .sidebar {
   padding-right: 0;
 }
