@@ -1,7 +1,46 @@
-<div class="slide-reveal category">
-    <div data-widget="'Components.Pages.Widgets.Page'" data-settings="{ 'id': 11 }"></div>
+<div class="row">
+    <div class="col col-md-3">
+        <a href="/izumrud" class="izumrud"></a>
+    </div>
+    <div class="col col-md-9 header-link">
+        <a href="/">party-club | анонс</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-md-3" style="padding-left: 0">
+        <div class="v_menu">
+            <h3><a href="/izumrud">офисный центр - <strong>IZUMRUD</strong></a></h3>
+            <h3><a href="/skyroom">party-club - <strong>SKYROOM</strong></a></h3>
+            <h3><a href="/beefeater">art-pub - <strong>BEEFEATER</strong></a></h3>
+        </div>
+        <div class="baner">
+            <div bz-widget="'bcPages.Widgets.Page'" data-settings="{'id': 142, templateUrl: '/views/widgets/pages/banner.html' }"></div>
+        </div>
+    </div>
+    <div class="col col-md-9 content" bz-loading-container="loading"  style="padding: 0">
+        <div class="mainpage">
+            <nav class="navbar navbar-inverse h_menu" role="navigation">
+                <div class="main-menu">
+                    <div bz-widget="'bcMenu.Widgets.Menu'" data-settings="{ 'id': 22 }"></div>
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="slide-reveal category">
+                    <div data-widget="'Components.Pages.Widgets.Page'" data-settings="{ 'id': 11 }"></div>
 
-    <h1>{{category.title|language}}</h1>
+                    <h1>{{category.title|language}}</h1>
 
-    <div class="main-feed" ng-include="'/views/widgets/pages/category.html'"></div>
+                    <div class="main-feed" ng-include="'/views/widgets/pages/category.html'"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-lg-12">
+        <div class="discount">
+            <a href="/"><img src="assets/img/discount.png" alt=""/></a>
+            <a href="/"><img src="assets/img/dresscod.png" alt=""/></a>
+        </div>
+    </div>
 </div>

@@ -1,44 +1,54 @@
-
-<div class="row default page">
-    <div ng-class="{ 'col-lg-3': page.images.0}">
-        <a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">
-            <img ng-src="{{ page.images.0.thumbnails.preview }}" />
-        </a>
+<div class="row">
+    <div class="col col-md-3">
+        <a href="/izumrud" class="izumrud"></a>
     </div>
-    <div ng-class="{ 'col-lg-9': page.images.0, 'col-lg-12': !page.images.0 }">
-        <h2><a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">{{page.title|language}}</a></h2>
-        <article>
-            <div class="body">
-                <div ng-bind-html="page.body.en"></div>
-            </div>
-        </article>
+    <div class="col col-md-9 header-link">
+        <a href="/">party-club | анонс</a>
     </div>
 </div>
-
-
-<!--div class="row">
-    <div class="col col-lg-3 sidebar">
-        <div bz-widget="'bcPages.Widgets.Category'" data-settings="{ 'category_id': page.category_id, templateUrl: '/views/widgets/pages/category/menu.html' }"></div>
-    </div>
-    <div class="col col-lg-9 content" bz-loading-container="loading">
-        <div class="default slide-reveal" app-view-segment="1">
-
-            <h1>{{page.title|language}}</h1>
-
-            <ul class="breadcrumb">
-                <li class="main-page">
-                    <a href="/">Главная</a>
-                </li>
-                <li ng-repeat="crumb in page.breadcrumbs">
-                    <a ng-href="{{ crumb.$url }}">{{ crumb.title|language }}</a> <span ng-if="!$last" class="divider">/</span>
-                </li>
-            </ul>
-
-            <div class="body" ng-bind-html="page.body.en"></div>
-
-            <div bz-img="page.images"></div>
-
+<div class="row">
+    <div class="col col-md-3" style="padding-left: 0">
+        <div class="v_menu">
+            <h3><a href="/izumrud">офисный центр - <strong>IZUMRUD</strong></a></h3>
+            <h3><a href="/skyroom">party-club - <strong>SKYROOM</strong></a></h3>
+            <h3><a href="/beefeater">art-pub - <strong>BEEFEATER</strong></a></h3>
+        </div>
+        <div class="baner">
+            <div bz-widget="'bcPages.Widgets.Page'" data-settings="{'id': 142, templateUrl: '/views/widgets/pages/banner.html' }"></div>
         </div>
     </div>
-    <div class="clearfix"></div>
-</div-->
+    <div class="col col-md-9 content" bz-loading-container="loading"  style="padding: 0">
+        <div class="mainpage">
+            <nav class="navbar navbar-inverse h_menu" role="navigation">
+                <div class="main-menu">
+                    <div bz-widget="'bcMenu.Widgets.Menu'" data-settings="{ 'id': 22 }"></div>
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="row default page">
+                    <div ng-class="{ 'col-lg-3': page.images.0}">
+                        <a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">
+                            <img ng-src="{{ page.images.0.thumbnails.preview }}" />
+                        </a>
+                    </div>
+                    <div ng-class="{ 'col-lg-9': page.images.0, 'col-lg-12': !page.images.0 }">
+                        <h2><a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">{{page.title|language}}</a></h2>
+                        <article>
+                            <div class="body">
+                                <div ng-bind-html="page.body.en"></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-lg-12">
+        <div class="discount">
+            <a href="/"><img src="assets/img/discount.png" alt=""/></a>
+            <a href="/"><img src="assets/img/dresscod.png" alt=""/></a>
+        </div>
+    </div>
+</div>
