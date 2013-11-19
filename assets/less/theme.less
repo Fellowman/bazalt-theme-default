@@ -503,13 +503,20 @@ a.beefeater {
 }
 */
 
+.main-slider {
+  height: 460px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
 .slider {
   &.widget {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
     display: block;
-    margin-bottom: 20px;
+    height: 100%;
+    margin: 0px;
+    overflow: visible;
+    width: 100%;
     .slider {
       width: 100%;
       position: absolute;
@@ -521,9 +528,11 @@ a.beefeater {
     }
   }
   .slider-nav {
-    position: absolute;
     bottom: 0;
-    left: 0;
+    left: auto;
+    position: absolute;
+    right: -5px;
+    top: 430px;
     a {
       display: inline-block;
       background: #dce7d5;
