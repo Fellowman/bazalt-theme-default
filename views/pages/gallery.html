@@ -1,9 +1,26 @@
-<div class="row">
+<div class="slide-reveal gallery">
+    <div>
+    <span ng-repeat="crumb in page.breadcrumbs">
+        <a class="h1" ng-if="$last" ng-href="{{ crumb.$url }}">{{ crumb.title|language }}</a>
+    </span>
+    </div>
+
+    <h1>{{page.title|language}}</h1>
+
+    <div class="body description description-gallery" ng-bind-html="page.body.en"></div>
+
+    <div bz-galleria="page.images"></div>
+
+    <div ng-include="'/views/block/summary.html'"></div>
+    <div ng-include="'/views/block/comments.html'"></div>
+</div>
+
+<!--div class="row">
     <div class="col col-lg-3 sidebar">
         <div class="v_menu">
-            <h3><a href="/post-26">офисный центр - <strong>IZUMRUD</a></strong></h3>
-            <h3><a href="/post-25">party-club - <strong>SKYROOM</a></strong></h3>
-            <h3><a href="/post-24">art-pub - <strong>BEEFEATER</a></strong></h3>
+            <h3><a href="/post-26">офисный центр - <strong>IZUMRUD</strong></a></h3>
+            <h3><a href="/post-25">party-club - <strong>SKYROOM</strong></a></h3>
+            <h3><a href="/post-24">art-pub - <strong>BEEFEATER</strong></a></h3>
         </div>
         <div class="baner">
             <p>Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на відміну від, наприклад, "Тут іде текст. Тут іде текст." Це робить текст схожим на оповідний. Багато програм верстування та веб-дизайну використовують Lorem Ipsum як зразок і пошук за терміном "lorem ipsum" відкриє багато веб-сайтів, які знаходяться ще в зародковому стані. Різні версії Lorem Ipsum з'явились за минулі роки, деякі випадково, деякі було створено зумисно (зокрема, жартівливі).</p>
@@ -22,4 +39,4 @@
         </div>
     </div>
     <div class="clearfix"></div>
-</div>
+</div-->
