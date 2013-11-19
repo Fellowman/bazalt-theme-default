@@ -8972,6 +8972,55 @@ a.beefeater {
   height: 800px;
 }
 */
-.slider img {
+.slider.widget {
+  position: relative;
   width: 100%;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+}
+.slider.widget .slider {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slider.widget .slider img {
+  max-width: 100%;
+}
+.slider .slider-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.slider .slider-nav a {
+  display: inline-block;
+  background: #dce7d5;
+  color: #4a8120;
+  text-decoration: none;
+  padding: 5px 12px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.slider .slider-nav a:hover,
+.slider .slider-nav a:focus {
+  background: #4a8120;
+  color: #dce7d5;
+}
+.slider .slider-nav .true {
+  display: inline-block;
+  background: #4a8120;
+  color: #dce7d5;
+  text-decoration: none;
+  padding: 5px 12px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.slider .slider-nav .true:hover,
+.slider .slider-nav .true:focus {
+  cursor: default;
+}
+.page_d img {
+  height: 150px;
+  width: 200px;
 }

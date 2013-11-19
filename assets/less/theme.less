@@ -504,7 +504,57 @@ a.beefeater {
 */
 
 .slider {
-  img {
+  &.widget {
+    position: relative;
     width: 100%;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+    .slider {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+  .slider-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    a {
+      display: inline-block;
+      background: #dce7d5;
+      color: #4a8120;
+      text-decoration: none;
+      padding: 5px 12px;
+      margin-right: 5px;
+      font-weight: bold;
+      &:hover, &:focus {
+        background: #4a8120;
+        color: #dce7d5;
+      }
+    }
+    .true {
+      display: inline-block;
+      background: #4a8120;
+      color: #dce7d5;
+      text-decoration: none;
+      padding: 5px 12px;
+      margin-right: 5px;
+      font-weight: bold;
+      &:hover, &:focus {
+        cursor: default;
+      }
+    }
+  }
+}
+
+.page_d {
+  img {
+    height: 150px;
+    width: 200px;
   }
 }
