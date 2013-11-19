@@ -322,6 +322,7 @@ h3 {
   padding: 4px 0;
   position: absolute;
   width: 100%;
+  z-index: 2;
 }
 
 .main-menu {
@@ -522,6 +523,7 @@ a.beefeater {
       position: absolute;
       top: 0;
       left: 0;
+      z-index: 1;
       img {
         max-width: 100%;
       }
@@ -531,19 +533,20 @@ a.beefeater {
     bottom: 0;
     left: auto;
     position: absolute;
-    right: -5px;
-    top: 430px;
+    right: -4px;
+    top: 429px;
+    z-index: 2;
     a {
+      background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+      color: #FFFFFF;
       display: inline-block;
-      background: #dce7d5;
-      color: #4a8120;
-      text-decoration: none;
-      padding: 5px 12px;
-      margin-right: 5px;
       font-weight: bold;
+      margin-right: 5px;
+      padding: 5px 12px;
+      text-decoration: none;
       &:hover, &:focus {
-        background: #4a8120;
-        color: #dce7d5;
+        background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+        color: #FFFFFF;
       }
     }
     .true {
