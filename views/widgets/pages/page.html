@@ -1,17 +1,15 @@
-<div class="row default widget page_d">
-
-    <div ng-class="{ 'col-lg-8': page.images.0, 'col-lg-12': !page.images.0 }">
+<div class="row default widget">
+    <div ng-class="{ 'col-lg-3': page.images.0}">
+        <a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">
+            <img ng-src="{{ page.images.0.thumbnails.preview }}" />
+        </a>
+    </div>
+    <div ng-class="{ 'col-lg-9': page.images.0, 'col-lg-12': !page.images.0 }">
         <h2><a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">{{page.title|language}}</a></h2>
-        <div ng-class="{ 'col-lg-4': page.images.0}">
-            <a smooth-scroll data-target="top" ng-href="{{ page.url }}" class="poster">
-                <img ng-src="{{ page.images.0.thumbnails.preview }}" />
-            </a>
-        </div>
         <article>
             <div class="body">
                 <div ng-bind-html="page.body.en"></div>
             </div>
         </article>
     </div>
-
 </div>

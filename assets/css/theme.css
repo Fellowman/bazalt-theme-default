@@ -8854,6 +8854,7 @@ h3 a:focus {
 }
 .mainpage {
   background: #ffffff;
+  padding-bottom: 20px;
 }
 .sidebar {
   padding-right: 0;
@@ -9198,6 +9199,7 @@ a.beefeater {
   overflow: hidden;
   position: relative;
   width: 100%;
+  margin-bottom: 20px;
 }
 .slider.widget {
   display: block;
