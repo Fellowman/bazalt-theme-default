@@ -31,6 +31,7 @@
     "angular-cookies": "~1.0.8",
     "fancybox": "~2.1.5",
     "font-awesome": "~3.2.1",
-    "jquery-galleria": "~1.2.9"
+    "jquery-galleria": "~1.2.9",
+    "jscrollpane": "~2.0.14"
   }
 }

@@ -9,6 +9,7 @@ define('app', [
     'modules/bzImg/module',
     'modules/bzGalleria/module',
     'modules/bzSlider/module',
+    'modules/bzScroll/module',
 
     'components/bcPages/module',
     'components/bcMenu/module',
@@ -26,6 +27,7 @@ define('app', [
     modules.push('bzImg');
     modules.push('bzGalleria');
     modules.push('bzSlider');
+    modules.push('bzScroll');
 
     // components
     modules.push('Components.bcUsers');

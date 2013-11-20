@@ -21,6 +21,10 @@ requirejs.config({
         //jquery-galleria
         'jquery-galleria': '../bazalt/bower_components/jquery-galleria/src/galleria',
 
+        //jscrollpane
+        'jscrollpane': '../bower_components/jscrollpane/script/jquery.jscrollpane.min',
+        'mousewheel': '../bower_components/jscrollpane/script/jquery.mousewheel',
+
         'bootstrap': '../bower_components/bootstrap/js',
 
         'angular': '../bower_components/angular/angular',
