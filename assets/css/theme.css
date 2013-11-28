@@ -9026,11 +9026,11 @@ h3 a:focus {
 .main-menu li a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-.v_menu_i {
+.menu_i {
   background-color: #91c2fa;
   padding: 10px;
 }
-.v_menu_i h3 a {
+.menu_i h3 a {
   color: #262626;
   display: block;
   font-size: 14px;
@@ -9038,19 +9038,19 @@ h3 a:focus {
   text-align: center;
   text-transform: uppercase;
 }
-.v_menu_i h3 a strong {
+.menu_i h3 a strong {
   font-weight: bold;
 }
-.v_menu_i h3 a:focus,
-.v_menu_i h3 a:hover {
+.menu_i h3 a:focus,
+.menu_i h3 a:hover {
   color: #ffffff;
   text-decoration: none !important;
 }
-.v_menu_s {
+.menu_s {
   background-color: #64f4cb;
   padding: 10px;
 }
-.v_menu_s h3 a {
+.menu_s h3 a {
   color: #262626;
   display: block;
   font-size: 14px;
@@ -9058,19 +9058,19 @@ h3 a:focus {
   text-align: center;
   text-transform: uppercase;
 }
-.v_menu_s h3 a strong {
+.menu_s h3 a strong {
   font-weight: bold;
 }
-.v_menu_s h3 a:focus,
-.v_menu_s h3 a:hover {
+.menu_s h3 a:focus,
+.menu_s h3 a:hover {
   color: #ffffff;
   text-decoration: none !important;
 }
-.v_menu_b {
+.menu_b {
   background-color: #fbb01f;
   padding: 10px;
 }
-.v_menu_b h3 a {
+.menu_b h3 a {
   color: #262626;
   display: block;
   font-size: 14px;
@@ -9078,11 +9078,11 @@ h3 a:focus {
   text-align: center;
   text-transform: uppercase;
 }
-.v_menu_b h3 a strong {
+.menu_b h3 a strong {
   font-weight: bold;
 }
-.v_menu_b h3 a:focus,
-.v_menu_b h3 a:hover {
+.menu_b h3 a:focus,
+.menu_b h3 a:hover {
   color: #ffffff;
   text-decoration: none !important;
 }
