@@ -9026,11 +9026,11 @@ h3 a:focus {
 .main-menu li a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-.v_menu {
+.v_menu_i {
   background-color: #91c2fa;
   padding: 10px;
 }
-.v_menu h3 a {
+.v_menu_i h3 a {
   color: #262626;
   display: block;
   font-size: 14px;
@@ -9038,11 +9038,51 @@ h3 a:focus {
   text-align: center;
   text-transform: uppercase;
 }
-.v_menu h3 a strong {
+.v_menu_i h3 a strong {
   font-weight: bold;
 }
-.v_menu h3 a:focus,
-.v_menu h3 a:hover {
+.v_menu_i h3 a:focus,
+.v_menu_i h3 a:hover {
+  color: #ffffff;
+  text-decoration: none !important;
+}
+.v_menu_s {
+  background-color: #64f4cb;
+  padding: 10px;
+}
+.v_menu_s h3 a {
+  color: #262626;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.v_menu_s h3 a strong {
+  font-weight: bold;
+}
+.v_menu_s h3 a:focus,
+.v_menu_s h3 a:hover {
+  color: #ffffff;
+  text-decoration: none !important;
+}
+.v_menu_b {
+  background-color: #fbb01f;
+  padding: 10px;
+}
+.v_menu_b h3 a {
+  color: #262626;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.v_menu_b h3 a strong {
+  font-weight: bold;
+}
+.v_menu_b h3 a:focus,
+.v_menu_b h3 a:hover {
   color: #ffffff;
   text-decoration: none !important;
 }
@@ -9188,7 +9228,7 @@ a.beefeater {
   opacity: 1;
   overflow: auto;
   padding: 15px 20px;
-  font-size: 12px;
+  font-size: 11px;
   text-align: justify;
 }
 #blick {
