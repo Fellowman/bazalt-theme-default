@@ -8629,7 +8629,7 @@ body {
   font-family: Verdana, sans-serif;
   font-size: 13px;
   line-height: 20px;
-  color: #333333;
+  color: #f0f0f0;
   background-color: #262626;
   background-image: url('../img/bg-1.png');
 }
@@ -8748,7 +8748,7 @@ h4,
 h5,
 h6 {
   font-family: TAHOMA;
-  color: #91C2FA;
+  color: #fff;
   font-weight: normal;
 }
 h1 strong,
@@ -8782,7 +8782,7 @@ h1 {
   font-size: 30px;
   line-height: 40px;
   display: block;
-  color: #91C2FA;
+  color: #fff;
   margin: 10px 0;
   font-weight: bold;
   text-transform: uppercase;
@@ -9026,11 +9026,11 @@ h3 a:focus {
 .main-menu li a:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-.v_menu {
+.menu_i {
   background-color: #91c2fa;
   padding: 10px;
 }
-.v_menu h3 a {
+.menu_i h3 a {
   color: #262626;
   display: block;
   font-size: 14px;
@@ -9038,11 +9038,51 @@ h3 a:focus {
   text-align: center;
   text-transform: uppercase;
 }
-.v_menu h3 a strong {
+.menu_i h3 a strong {
   font-weight: bold;
 }
-.v_menu h3 a:focus,
-.v_menu h3 a:hover {
+.menu_i h3 a:focus,
+.menu_i h3 a:hover {
+  color: #ffffff;
+  text-decoration: none !important;
+}
+.menu_s {
+  background-color: #64f4cb;
+  padding: 10px;
+}
+.menu_s h3 a {
+  color: #262626;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu_s h3 a strong {
+  font-weight: bold;
+}
+.menu_s h3 a:focus,
+.menu_s h3 a:hover {
+  color: #ffffff;
+  text-decoration: none !important;
+}
+.menu_b {
+  background-color: #fbb01f;
+  padding: 10px;
+}
+.menu_b h3 a {
+  color: #262626;
+  display: block;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.menu_b h3 a strong {
+  font-weight: bold;
+}
+.menu_b h3 a:focus,
+.menu_b h3 a:hover {
   color: #ffffff;
   text-decoration: none !important;
 }
@@ -9104,6 +9144,24 @@ a.beefeater {
   color: #fff;
   text-decoration: none;
 }
+.footer-link img {
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.footer-link span a {
+  color: #FFFFFF;
+  display: block;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.footer-link span a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-link span a hr {
+  margin-left: 140px;
+  margin-top: -10px;
+}
 .main_menu_g {
   display: block;
   margin: 0 auto;
@@ -9147,16 +9205,20 @@ a.beefeater {
   width: 200px;
 }
 .discount a img {
-  width: 57px;
-  height: 74px;
-  margin: 10px 20px 5px 20px;
+  margin: 30px 20px;
 }
 .main-content {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
-  color: #F2F2F2;
-  height: 505px;
   overflow: auto;
-  padding: 10px 20px;
+  padding: 20px;
+  text-align: justify;
+}
+.main-content h2 {
+  margin-bottom: 20px;
+  display: block;
+}
+.main-content h2 a {
+  color: #fff;
 }
 .baner {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
@@ -9165,20 +9227,21 @@ a.beefeater {
   margin-top: 15px;
   opacity: 1;
   overflow: auto;
-  padding: 20px 25px;
-}
-.baner p {
-  color: #F2F2F2;
+  padding: 15px 20px;
   font-size: 11px;
   text-align: justify;
 }
-/*
 #blick {
   margin: 0 auto;
   position: relative;
   width: 600px;
 }
-#light { position:absolute; height: 800px; right: 0; left: 600px; }
+#light {
+  position: absolute;
+  height: 800px;
+  right: 0;
+  left: 600px;
+}
 #light.left {
   background-image: url("../img/light.png");
   display: block;
@@ -9191,7 +9254,6 @@ a.beefeater {
   width: 295px;
   height: 800px;
 }
-*/
 .main-slider {
   height: 505px;
   margin-bottom: 20px;
@@ -9262,6 +9324,7 @@ a.beefeater {
   top: 50px;
   width: 35%;
   z-index: 3;
+  display: none;
 }
 .page_d img {
   height: 150px;
